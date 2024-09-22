@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <title>R&amp;R Patisserie</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -8,26 +7,19 @@
 <body>
     <!-- NAVBAR CREATION -->
     <header class="header">
-        <nav class="navbar">
-            <a href="https://slurpyatyourservice.github.io/ContactUs-page/">Contact us</a>
-            <a href="https://slurpyatyourservice.github.io/Terms">Terms and Conditions</a>
-        </nav>
+        <nav class="navbar" style="color: black;">
+    <a href="https://slurpyatyourservice.github.io/ContactUs-page/" style="color: black;">Contact us</a>
+    <a href="https://slurpyatyourservice.github.io/Terms" style="color: black;">Terms and Conditions</a>
+</nav>
+
     </header>
     <!-- LOGIN FORM CREATION -->
-    <div class="background"></div>
+    <div class="background" style="background-color: white; width: 100%; height: 100vh;"></div>
+
     <div class="container">
-        <div class="item">
-            <h2 class="logo"><i class="bx bxl-cake"></i>R&amp;R Patisserie</h2>
-            <div class="text-item">
-                <h2>Welcome <br><span>To Our Beautiful pastry</span></h2>
-                <p>R&amp;R Cakes And Events bring your dreams to reality. just tell us your desire. and we put our effort into it</p>
-                <div class="social-icon">
-                    <a href="https://www.facebook.com/p/P%C3%A2tisserie-RR-100064697589095/"><i class="bx bxl-facebook"></i></a>
-                    <a href="https://x.com/rnrcake"><i class="bx bxl-twitter"></i></a>
-                    <a href="https://www.instagram.com/patisserie_r.r/"><i class="bx bxl-instagram"></i></a>
-                </div>
-            </div>
-        </div>
+        <div class="item" style="background-color: #f4c2c2; padding: 20px; border-radius: 10px;"> <h2 class="logo"><i class="bx bxl-cake"></i>R&amp;R Patisserie</h2> <div class="text-item"> <h2>Welcome <br><span>To Our Beautiful pastry</span></h2> <p>R&amp;R Cakes And Events bring your dreams to reality. Just tell us your desire, and we put our effort into it.</p> <div class="social-icon"> <a href="https://www.facebook.com/p/P%C3%A2tisserie-RR-100064697589095/"><i class="bx bxl-facebook"></i></a> <a href="https://x.com/rnrcake"><i class="bx bxl-twitter"></i></a> <a href="https://www.instagram.com/patisserie_r.r/"><i class="bx bxl-instagram"></i></a> </div> </div> </div>
+        
+
         <div class="login-section active">
             <div class="form-box login">
                 <form id="login-form">
@@ -53,32 +45,45 @@
                 </form>
             </div>
             <div class="form-box register">
-                <form id="signup-form">
-                    <h2>Sign Up</h2>
-                    <div class="input-box">
-                        <span class="icon"><i class="bx bxs-user"></i></span>
-                        <input type="text" id="username" required="">
-                        <label>Username</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><i class="bx bxs-envelope"></i></span>
-                        <input type="email" id="email" required="">
-                        <label>Email</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><i class="bx bxs-lock-alt"></i></span>
-                        <input type="password" id="password" required="">
-                        <label>Password</label>
-                    </div>
-                    <div class="remember-password">
-                        <label><input type="checkbox" id="terms" required="">I agree with the terms and conditions</label>
-                    </div>
-                    <button type="button" class="btn" onclick="validateAndRedirectSignup()">Sign Up</button>
-                    <div class="create-account">
-                        <p>Already Have An Account? <a href="#" class="login-link">Sign In</a></p>
-                    </div>
-                </form>
-            </div>
+    <form id="signup-form" style="background-color: #b2fab4; padding: 30px; border-radius: 10px; width: 500px; margin: 50px auto; font-family: Arial, sans-serif;">
+        <h2 style="text-align: center; margin-bottom: 20px;">Sign Up</h2>
+
+        <div class="input-box" style="position: relative; margin-bottom: 15px;">
+            <span class="icon" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;">
+                <i class="bx bxs-user"></i>
+            </span>
+            <input type="text" id="username" required="" style="width: 100%; padding: 15px; padding-left: 50px; border: 1px solid #ccc; border-radius: 5px; font-size: 18px;">
+            <label style="position: absolute; top: 50%; left: 50px; transform: translateY(-50%);">Username</label>
+        </div>
+
+        <div class="input-box" style="position: relative; margin-bottom: 15px;">
+            <span class="icon" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;">
+                <i class="bx bxs-envelope"></i>
+            </span>
+            <input type="email" id="email" required="" style="width: 100%; padding: 15px; padding-left: 50px; border: 1px solid #ccc; border-radius: 5px; font-size: 18px;">
+            <label style="position: absolute; top: 50%; left: 50px; transform: translateY(-50%);">Email</label>
+        </div>
+
+        <div class="input-box" style="position: relative; margin-bottom: 15px;">
+            <span class="icon" style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px;">
+                <i class="bx bxs-lock-alt"></i>
+            </span>
+            <input type="password" id="password" required="" style="width: 100%; padding: 15px; padding-left: 50px; border: 1px solid #ccc; border-radius: 5px; font-size: 18px;">
+            <label style="position: absolute; top: 50%; left: 50px; transform: translateY(-50%);">Password</label>
+        </div>
+
+        <div class="remember-password" style="margin-bottom: 15px;">
+            <label><input type="checkbox" id="terms" required="" style="margin-right: 5px;"> I agree with the terms and conditions</label>
+        </div>
+
+        <button type="button" class="btn" onclick="validateAndRedirectSignup()" style="background-color: #4caf50; color: white; border: none; padding: 12px 20px; border-radius: 5px; cursor: pointer; width: 100%; font-size: 18px;">Sign Up</button>
+
+        <div class="create-account" style="text-align: center; margin-top: 15px;">
+            <p>Already Have An Account? <a href="#" class="login-link">Sign In</a></p>
+        </div>
+    </form>
+</div>
+
         </div>
     </div>
     <!-- SIGN UP FORM CREATION -->
@@ -103,5 +108,6 @@
             }
         }
     </script>
-</body>
-</html>
+
+
+</body></html>
