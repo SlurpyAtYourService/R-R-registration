@@ -36,8 +36,8 @@ body{
 }
 .navbar a{
     position: relative;
-    font-size: 16px;
-    color: #fff;
+    font-size: 30px;
+    color: #90EE90;
     margin-right: 30px;
     text-decoration: none;
 }
